@@ -3,52 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Lista de Tarefas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1>Maria Silva</h1>
-            <p>Desenvolvedora Front-End Júnior</p>
-        </div>
-    </header>
+    <div class="todo-container">
+        <h1>Minhas Tarefas</h1>
 
-    <main>
-        <section id="about" class="container">
-            <h2>Sobre Mim</h2>
-            <p>Olá! Sou uma desenvolvedora apaixonada por criar interfaces de usuário intuitivas e bonitas. Meu objetivo é transformar ideias em código limpo e eficiente.</p>
-        </section>
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Adicionar nova tarefa..." required>
+            <button type="submit">Adicionar</button>
+        </form>
 
-        <section id="skills" class="container">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3 (Flexbox, Grid)</li>
-                <li>JavaScript (ES6+)</li>
-                <li>Git & GitHub</li>
+        <ul id="todo-list">
             </ul>
-        </section>
+    </div>
 
-        <section id="projects" class="container">
-            <h2>Meus Projetos</h2>
-            <div class="project-card">
-                <h3>Projeto de Notícias</h3>
-                <p>Uma aplicação que consome uma API para exibir as manchetes mais recentes. (Link em breve)</p>
-            </div>
-            <div class="project-card">
-                <h3>Jogo da Memória</h3>
-                <p>Um jogo interativo para testar minha lógica com JavaScript. (Link em breve)</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Maria Silva. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+    <script src="script.js"></script>
 
 </body>
 </html>
